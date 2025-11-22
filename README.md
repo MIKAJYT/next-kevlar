@@ -8,8 +8,8 @@ A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate w
 
 - ✅ Equip/unequip light and heavy plate carriers
 - 🔄 Insert and remove armor plates via stash menu
-- 🛡️ Dynamic damage system that tracks and applies damage to individual plates
-- 💥 Plates can break and are visually represented
+- 🛡️ Dynamic damage system that tracks and applies damage to individual plates (WIP)
+- 💥 Plates can break and are visually represented (WIP)
 - 🗃️ Customizable plate types and carrier limits
 - 🎨 Includes styled item icons (vests and plates)
 - 📦 jaksam_inventory integration (temp stashes, metadata, tooltip display)

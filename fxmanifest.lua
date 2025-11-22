@@ -22,3 +22,4 @@ server_scripts {
 }
 
 dependency 'ox_inventory'
+dependency 'jaksam_inventory'

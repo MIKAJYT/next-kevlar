@@ -1,8 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'The Next Team | discord.nextextended.com'
-description 'An advanced kevlar plate system by Next Scripts.'
+author 'The Next Team | discord.nextextended.com. Forked by MikaJYT'
+description 'An advanced kevlar plate system by Next Scripts and forked by MikaJYT to work with jaksam_inventory.'
 version '1.0.2'
 lua54 'yes'
 

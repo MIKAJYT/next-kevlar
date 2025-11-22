@@ -1,5 +1,3 @@
-# DISCLAIMER: THIS RESOURCE IS STILL WIP AND CONTAINS BUGS. I WILL TRY TO FIX THEM ALL AS SOON AS POSSIBLE.
-
 # 🔰 Next Kevlar | Modular plate carriers
 
 A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate with `jaksam_inventory` and its `ox_inventory bridge` found in `__installation/compatibility`. Perfect for realistic roleplay servers that want immersive armor mechanics.
@@ -10,8 +8,8 @@ A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate w
 
 - ✅ Equip/unequip light and heavy plate carriers
 - 🔄 Insert and remove armor plates via stash menu
-- 🛡️ Dynamic damage system that tracks and applies damage to individual plates (WIP)
-- 💥 Plates can break and are visually represented (WIP)
+- 🛡️ Dynamic damage system that tracks and applies damage to individual plates
+- 💥 Plates can break and are visually represented
 - 🗃️ Customizable plate types and carrier limits
 - 🎨 Includes styled item icons (vests and plates)
 - 📦 jaksam_inventory integration (temp stashes, metadata, tooltip display)
@@ -49,6 +47,6 @@ The resource is now ready to use. You can add the items to shops, or give them v
 
 ## 📦 Support / Reporting Bugs
 
-This resource is currently still in testing. If you want to report a bug or require support, open a issue or DM me on Discord, Username: mikajyt
+This resource was tested before release. Bugs could still exist. If you want to report a bug or require support, open a issue or DM me on discord: mikajyt
 
 Please remember to star this repository!

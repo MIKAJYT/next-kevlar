@@ -1,3 +1,8 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- If some thing don´t make sense then its because i am an amature and because i originaly put some debug prints inside put removed them. (I only removed the print)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 local equippedVest, pedArmor, plateMeta
 
 CreateThread(function()
@@ -72,3 +77,41 @@ RegisterNetEvent('next-kevlar:droppedVest', function(metadata)
     pedArmor=0
     equippedVest=nil
 end)
+
+CreateThread(function()
+    while true do
+        Wait(500)
+        
+        if equippedVest and pedArmor then
+            local ped = PlayerPedId()
+            local currentArmor = GetPedArmour(ped)
+            
+            if currentArmor < pedArmor then
+                local armorLost = pedArmor - currentArmor
+                if plateMeta and #plateMeta > 0 then
+                    
+                    local remainingDamage = armorLost
+                    
+                    for i, plate in ipairs(plateMeta) do
+                        if remainingDamage <= 0 then
+                            break 
+                        end
+                        
+                        if plate.health and plate.health > 0 then
+                            local oldHealth = plate.health
+                            local damageToThisPlate = math.min(plate.health, remainingDamage)
+                            plate.health = plate.health - damageToThisPlate
+                            remainingDamage = remainingDamage - damageToThisPlate
+                        
+                        end
+                    end
+                
+                    TriggerServerEvent('next-kevlar:syncArmor', equippedVest.itemName, equippedVest.carrierId, plateMeta)
+                end
+                
+                pedArmor = currentArmor
+            end
+        end
+    end
+end)
+

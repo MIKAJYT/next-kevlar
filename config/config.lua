@@ -36,8 +36,3 @@ Config.PlateCarriers = {
         }
     },
 }
-
-Config.Plates = { -- Item name should be the same as in the ox config!
-    ['heavyplate'] = 50, -- Amount of armor to give when the plate is undamaged. Setting this value above 50 has no effect (since you can't exceed 100 (=2x50) armor)
-    ['lightplate'] = 25,
-}

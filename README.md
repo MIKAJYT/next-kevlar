@@ -12,7 +12,7 @@ A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate w
 - 💥 Plates can break and are visually represented
 - 🗃️ Customizable plate types and carrier limits
 - 🎨 Includes styled item icons (vests and plates)
-- 📦 jaksam_inventory integration (temp stashes, metadata, tooltip display(WIP))
+- 📦 jaksam_inventory integration (temp stashes, metadata, tooltip display)
 - 🚫 Anti-abuse protections and server-side validation
 - ⚙️ Easy-to-edit config for vest visuals, limits, sync rules, etc.
 

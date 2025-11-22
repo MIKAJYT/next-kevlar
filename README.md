@@ -20,7 +20,7 @@ A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate w
 
 ## 📦 Dependencies
 - [jaksam_inventory](https://fivem.jaksam-scripts.com/package/7091785)
-- ox_inventory (The "fake" ox_inventory from the __install folder of jaksam_inventory)
+- ox_inventory (The "fake" ox_inventory from the `__installation/compatibility` folder of `jaksam_inventory`)
 - [ox_lib](https://github.com/overextended/ox_lib)
 
 ---

@@ -1,3 +1,5 @@
+# DISCLAIMER: THIS RESOURCE IS STILL WIP AND CONTAINS BUGS. I WILL TRY TO FIX THEM ALL AS SOON AS POSSIBLE.
+
 # 🔰 Next Kevlar | Modular plate carriers
 
 A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate with `jaksam_inventory` and its `ox_inventory bridge` found in `__installation/compatibility`. Perfect for realistic roleplay servers that want immersive armor mechanics.

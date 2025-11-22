@@ -1,10 +1,5 @@
 Config = {}
 
--- For performance reasons on bigger servers, we'd recommend you set this to false.
--- If you are a smaller server that doesn't mind some extra server events being triggered, you can opt to enable this.
--- With it disabled, plate health won't sync if it receives damage, only if the plate breaks.
-Config.SyncPlatesEveryHit = true
-
 -- If true, a plate item will be converted to a broken plate item if it breaks. If false, it will disappear.
 Config.UseBrokenPlates = true
 Config.BrokenPlateItem = 'brokenplate'

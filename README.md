@@ -47,6 +47,6 @@ The resource is now ready to use. You can add the items to shops, or give them v
 
 ## 📦 Support / Reporting Bugs
 
-This resource was tested before release. Bugs could still exist. If you want to report a bug or require support, open a issue or DM me on discord: mikajyt
+This resource is currently still in testing. If you want to report a bug or require support, open a issue or DM me on discord: mikajyt
 
 Please remember to star this repository!

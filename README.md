@@ -1,6 +1,6 @@
 # 🔰 Next Kevlar | Modular plate carriers
 
-A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate with `ox_inventory`. Perfect for realistic roleplay servers that want immersive armor mechanics.
+A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate with `jaksam_inventory` and its `ox_inventory bridge` found in `__installation/compatibility`. Perfect for realistic roleplay servers that want immersive armor mechanics.
 
 ---
 
@@ -12,15 +12,15 @@ A fully modular Kevlar & plate carrier system for FiveM. Designed to integrate w
 - 💥 Plates can break and are visually represented
 - 🗃️ Customizable plate types and carrier limits
 - 🎨 Includes styled item icons (vests and plates)
-- 📦 ox_inventory integration (temp stashes, metadata, tooltip display)
+- 📦 jaksam_inventory integration (temp stashes, metadata, tooltip display)
 - 🚫 Anti-abuse protections and server-side validation
 - ⚙️ Easy-to-edit config for vest visuals, limits, sync rules, etc.
 
 ---
 
 ## 📦 Dependencies
-
-- [ox_inventory](https://github.com/overextended/ox_inventory)
+- [jaksam_inventory](https://fivem.jaksam-scripts.com/package/7091785)
+- ox_inventory (The "fake" ox_inventory from the __install folder of jaksam_inventory)
 - [ox_lib](https://github.com/overextended/ox_lib)
 
 ---
@@ -35,7 +35,7 @@ Unpack the release and remove the release tag so only `next-kevlar` remains. Mak
 
 2. **Navigate to the installation folder**
 
-Here, you'll find a premade config to paste into your `ox_inventory` `data/items.lua`. Premade items are also included. Drag these to `web/images`.
+Here, you'll find a premade config to paste into your `jaksam_inventory` `_data/items.lua`. Premade items are also included. Drag these to `_images`.
 
 3. **Configure to your own liking**
 
@@ -47,6 +47,6 @@ The resource is now ready to use. You can add the items to shops, or give them v
 
 ## 📦 Support / Reporting Bugs
 
-This resource was tested thouroughly before release. Bugs could still exist. If you want to report a bug or require support, please join our Discord server.
+This resource was tested before release. Bugs could still exist. If you want to report a bug or require support, open a issue or DM me on discord: mikajyt
 
-Please remember to star this repository, and join our [discord](https://discord.nextextend.com)!
+Please remember to star this repository!

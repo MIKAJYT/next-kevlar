@@ -58,7 +58,10 @@ Items = {
             itemname = 'lightplate',
         },
         throwableOptions = false,
+        displayFields = {
+    { field = 'health', label = 'Plate Health: ${value}/25'}, -- Random example
     },
+},
 
 ['heavyplate'] = {
         label = 'Heavy Plate',
@@ -66,14 +69,17 @@ Items = {
         stackable = false,
         close = false,
         description = 'A heavy plate, made of Ceramics',
-        maxStack = 100, -- does not actually stack because stackable is false
+        maxStack = 100,
         type = 'item',
         metadata = {
             health = 50,
             itemname = 'heavyplate',
         },
         throwableOptions = false,
+        displayFields = {
+    { field = 'health', label = 'Plate Health: ${value}/50'}, -- Random example
     },
+},
 
 ['brokenplate'] = {
         label = 'Broken Plate',

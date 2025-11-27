@@ -115,3 +115,23 @@ CreateThread(function()
     end
 end)
 
+local function convertJaksamToOx(inv)
+    if not inv or not inv.items then return {} end
+
+    local oxItems = {}
+
+    for slot, item in pairs(inv.items) do
+        local slotNum = tonumber(string.match(slot, "%d+")) or 0
+
+        table.insert(oxItems, {
+            name = item.name or "unknown",
+            label = (item.name or "unknown"):gsub("_", " "):gsub("^%l", string.upper),
+            count = item.amount or 1,
+            weight = 100, -- Beispielwert
+            slot = slotNum,
+            metadata = item.metadata or {}
+        })
+    end
+
+    return oxItems
+end

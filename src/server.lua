@@ -298,3 +298,46 @@ end, {
     inventoryFilter = { '^temp%-%d+$' },
     priority = 100 
 })
+
+local playerInventories = {}
+
+local function convertJaksamToOx(inv)
+    if not inv or not inv.items then return {} end
+    local oxItems = {}
+
+    for slot, item in pairs(inv.items) do
+        local slotNum = tonumber(string.match(slot, "%d+")) or 0
+        table.insert(oxItems, {
+            name = item.name or "unknown",
+            label = (item.name or "unknown"):gsub("_", " "):gsub("^%l", string.upper),
+            count = item.amount or 1,
+            weight = 100,
+            slot = slotNum,
+            metadata = item.metadata or {}
+        })
+    end
+
+    return oxItems
+end
+
+RegisterNetEvent('inventory:clientSendInventory', function(inv)
+    local src = source
+    if type(inv) ~= "table" or not inv.id then
+        print(("^1[InventoryBridge]^0 Ungültige Daten von %s"):format(src))
+        return
+    end
+
+    playerInventories[src] = convertJaksamToOx(inv)
+end)
+
+AddEventHandler('__cfx_export_ox_inventory_GetPlayerItems', function(setCallback)
+    setCallback(function(playerId)
+        if not playerId then playerId = source end
+        return playerInventories[playerId] or {}
+    end)
+end)
+
+AddEventHandler('playerDropped', function(reason)
+    local src = source
+    playerInventories[src] = nil
+end)

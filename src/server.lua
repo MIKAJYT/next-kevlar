@@ -341,3 +341,16 @@ AddEventHandler('playerDropped', function(reason)
     local src = source
     playerInventories[src] = nil
 end)
+
+
+
+local ESX = exports.es_extended:getSharedObject()
+
+
+RegisterNetEvent('esx:playerLoaded', function(playerId, xPlayer)
+
+    local src = playerId or source
+    if not src then return end
+
+    TriggerClientEvent('next-kevlar:resetArmorOnLogin', src)
+end)

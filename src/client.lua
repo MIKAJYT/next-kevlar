@@ -135,3 +135,12 @@ local function convertJaksamToOx(inv)
 
     return oxItems
 end
+
+
+RegisterNetEvent('next-kevlar:resetArmorOnLogin', function()
+    local ped = PlayerPedId()
+    Wait(3000)
+    SetPedArmour(ped, 0)
+    pedArmor = 0  
+    print('[next-kevlar] Armor reset on character load')
+end)
